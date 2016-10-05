@@ -1,0 +1,24 @@
+.containerHeader {
+	//background-color: #765;
+	//border: 3px solid #111;
+	position: relative;
+	text-align: center;
+	height: 150px;
+	margin: auto;
+}
+
+.header_name { 
+	padding: 50px 0 0 0;
+	font-size: 2.2rem;
+}
+
+.header_name a {
+	text-decoration: none;
+	color: rgba(0,0,0,1);
+}
+
+.header_job {
+	font-size: 1.0rem;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}

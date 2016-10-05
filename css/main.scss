@@ -1,0 +1,23 @@
+---
+# Main Sass file
+---
+
+// Constants
+
+$webSize: 960px;
+
+// Import all partials from _sass
+@import
+	'reset',
+	'typography',
+    'header',
+    'navigation',
+    'layoutContent',
+    'about',
+    'resume',
+    'research',
+    'publications',
+    'contact',
+    'footer',
+    'svg-icons'
+;

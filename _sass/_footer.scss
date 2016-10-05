@@ -1,0 +1,62 @@
+.footerWrapper {
+  padding: 20px 0;
+  border-top: 1px solid #edefee;
+}
+
+
+.contactList {
+  list-style: none;
+  margin-left: 0; 
+}
+
+.footerName { 
+  font-size: 1.2rem;
+}
+
+.footerName a {
+  text-decoration: none;
+  color: rgba(0,0,0,1);
+}
+
+.footerJob {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.footerColWraper {
+    //margin: auto;
+    width: 100%;
+    //background-color: #654;
+    padding: 10px 10px;
+}
+
+.footerColWraper ul {
+    list-style-type: none;
+}
+
+.footerColWraper dt, dd {
+    display: inline-block;
+}
+
+.footerColWraper dt {
+    width: 50%;
+    //background-color: #285;
+}
+
+.footerColWraper dd {
+    width: 49%;
+    //background-color: #269;
+    text-align: right;
+    padding: 0 10px;
+}
+
+.footerColWraper dd a {
+    padding: 0 5px;
+}
+
+@media(max-width: 640px) {
+    .footerColWraper dt, dd {
+        display: block;
+    }
+}

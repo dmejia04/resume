@@ -1,0 +1,28 @@
+# Jekyll Resume Theme
+
+# Site settings
+name: Daniel Mejia
+job: Researcher in Fluid Mechanics
+workAdresse: IMFT, group PSC
+email: dmejia04@icloud.com
+baseurl: "/resume/"
+url: "http://dmejia04.github.io"
+
+links:
+  intecocis: http://intecocis.inp-toulouse.fr/en/home.html
+  cnrs: http://www.cnrs.fr
+  usb: http://www.usbbog.edu.co
+  supaero: http://www.isae.fr
+  inp: http://www.inp-toulouse.fr/en/index.html
+  imft: https://www.imft.fr
+  poinsot: http://www.cerfacs.fr/~poinsot/
+  github: https://github.com/dmejia04
+  linkedin : https://www.linkedin.com/in/daniel-mejia-0a7a9150?trk=nav_responsive_tab_profile_pic
+  youtube: https://www.youtube.com/channel/UCB5-fhtNTR9XS2qcDBC08LA
+  facebook: https://www.facebook.com/dmejia04/
+  instagram: https://www.instagram.com/dmejia04/
+  flickr: https://www.flickr.com/photos/danielsupertramp/
+  erc : https://erc.europa.eu/advanced-grants
+
+# Build settings
+markdown: kramdown

@@ -1,0 +1,310 @@
+<body>
+    <div class="content">
+
+        <h3 class="section-title">A Little Bit About Me</h3>
+        <dl class="history">
+                <dt>
+                    <p><img class="profilePicture" src="data/img/daniel/profilePic02.jpg" alt="Profile Picture"></p>
+                </dt>
+                    <dd>
+                        <p>Hello, I am Daniel Mejia a 33 years old French/Colombian researcher. I was born and raised in Armenia, a small city in the hart of the Colombian coffee region. I lived there until completed a scientific baccalaureate in 2001. In 2002 I moved to Bogota D.C to continue my education in a aeronautical engineering school. Here I developed a taste for fluid mechanics and propulsion. In the mean time I alternate my studies with work experiences in the US. I spend four winters in the Aspen mountains working as a snowboard guide and a cook. In 2007 I obtained my aeronautical engineering degree from the <a class="link" href="{{ site.links.usb }}">University of San Beanaventua</a>. <!--I was head of the class with an average of 4.8/5.0.--> In 2008 I moved to Toulouse France to do a masters of science in fluid dynamics at the <a class="link" href="{{ site.links.supaero }}">ISAE-SUPAERO</a>. I graduated in the spring 2010 and I started a Ph.D in fluid mechanics, specialized in combustion physics at <a class="link" href="{{ site.links.imft }}">IMFT</a> lab in Toulouse. I defended my Ph.D in the spring of 2014<!--, with great reviews from the jury-->. Since then I have been working as a postdoc for the <a class="link" href="{{ site.links.cnrs }}">CNRS</a> in the <a class="link" href="{{ site.links.itecocis }}">INTECOCIS</a> project. I obtained the french nationality in the winter of 2015.</p>
+                    </dd>
+        </dl>
+
+            <h3 class="section-title">Skills</h3>
+            <div class="containerSkills">
+                <dl class="skills">
+                    {% for qualification in site.data.skills %}
+                        <dt>
+                            <p class="title">{{ qualification.qualification }}</p>
+                        </dt>
+                        <dd>
+                            <ul>
+                            {% for ability in qualification.ability %}
+                                <li>
+                                {{ ability }}
+                                </li>
+                            {% endfor %}  
+                            </ul> 
+                        </dd>
+                    {% endfor %}
+                </dl>
+            </div>
+
+            <h3 class="section-title">Hobbies</h3>
+            <div class="containerHobbies">
+                <dl class="hobbies">
+                    
+                        <dt>
+                            <p class="title">Football</p>
+                            <p>I play football in a local club. I have been playing football pretty much my whole life.</p>
+                        </dt>
+                        <dd>
+                            <div class="slideshow-container">
+
+                                <div class="mySlidesF fade">
+                                  <div class="numbertextF">1 / 4</div>
+                                  <img src="data/img/foot/foot01.jpg" style="width:100%">
+                                  <div class="textF">US Ramonville 2014/2015</div>
+                                </div>
+
+                                <div class="mySlidesF fade">
+                                  <div class="numbertextF">2 / 4</div>
+                                  <img src="data/img/foot/foot02.jpg" style="width:100%">
+                                  <div class="textF">US Ramonville 2013/2014</div>
+                                </div>
+
+                                <div class="mySlidesF fade">
+                                  <div class="numbertextF">3 / 4</div>
+                                  <img src="data/img/foot/foot03.jpg" style="width:100%">
+                                  <div class="textF">US Ramonville 2013/2014</div>
+                                </div>
+
+                                <div class="mySlidesF fade">
+                                  <div class="numbertextF">4 / 4</div>
+                                  <img src="data/img/foot/foot04.jpg" style="width:100%">
+                                  <div class="textF">INP 2015/2016</div>
+                                </div>
+
+                                <a class="prevF" onclick="plusSlidesF(-1)">&#x276E;</a>
+                                <a class="nextF" onclick="plusSlidesF(1)">&#x276F;</a>
+
+                            </div>
+
+                        </dd>
+
+                        <dt>
+                            <p class="title">Photography</p>
+                            <p>Here there are some of my own best shots:</p>
+                        </dt>
+                        <dd>
+                            <div class="slideshow-container">
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">1 / 27</div>
+                                  <img src="data/img/photo/photo01.jpg" style="width:100%">
+                                  <div class="textP">Neusa, Cundinamarca CO.</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">2 / 27</div>
+                                  <img src="data/img/photo/photo02.jpg" style="width:100%">
+                                  <div class="textP">Neusa, Cundinamarca CO.</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">3 / 27</div>
+                                  <img src="data/img/photo/photo03.jpg" style="width:100%">
+                                  <div class="textP">Butantan, Antioquia CO</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">4 / 27</div>
+                                  <img src="data/img/photo/photo04.jpg" style="width:100%">
+                                  <div class="textP">Tayrona, Magdalena CO</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">5 / 27</div>
+                                  <img src="data/img/photo/photo05.jpg" style="width:100%">
+                                  <div class="textP">Cocuy, Arauca CO</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">6 / 27</div>
+                                  <img src="data/img/photo/photo06.jpg" style="width:100%">
+                                  <div class="textP">Aquilino, Tolima CO</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">7 / 27</div>
+                                  <img src="data/img/photo/photo07.jpg" style="width:100%">
+                                  <div class="textP">Wintegreen, Virginia US</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">8 / 27</div>
+                                  <img src="data/img/photo/photo08.jpg" style="width:100%">
+                                  <div class="textP">Tayrona, Magdalena CO</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">9 / 27</div>
+                                  <img src="data/img/photo/photo09.jpg" style="width:100%">
+                                  <div class="textP">Tayrona, Magdalena CO</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">10 / 27</div>
+                                  <img src="data/img/photo/photo10.jpg" style="width:100%">
+                                  <div class="textP">Butantan, Antioquia CO</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">11 / 27</div>
+                                  <img src="data/img/photo/photo11.jpg" style="width:100%">
+                                  <div class="textP">Butantan, Antioquia CO</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">12 / 27</div>
+                                  <img src="data/img/photo/photo12.jpg" style="width:100%">
+                                  <div class="textP">washington DC, US</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">13 / 27</div>
+                                  <img src="data/img/photo/photo13.jpg" style="width:100%">
+                                  <div class="textP">Santa Marta, Magdalena CO</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">14 / 27</div>
+                                  <img src="data/img/photo/photo14.jpg" style="width:100%">
+                                  <div class="textP">Butantan, Antioquia CO</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">15 / 27</div>
+                                  <img src="data/img/photo/photo15.jpg" style="width:100%">
+                                  <div class="textP">Cocora, Quindio CO</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">16 / 27</div>
+                                  <img src="data/img/photo/photo16.jpg" style="width:100%">
+                                  <div class="textP">Louvre, Paris FR</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">17 / 27</div>
+                                  <img src="data/img/photo/photo17.jpg" style="width:100%">
+                                  <div class="textP">Paris, Île de France FR</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">18 / 27</div>
+                                  <img src="data/img/photo/photo18.jpg" style="width:100%">
+                                  <div class="textP">Paris, Île de France FR</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">19 / 27</div>
+                                  <img src="data/img/photo/photo19.jpg" style="width:100%">
+                                  <div class="textP">Aspen, Colorado US</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">20 / 27</div>
+                                  <img src="data/img/photo/photo20.jpg" style="width:100%">
+                                  <div class="textP">Aspen, Colorado US</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">21 / 27</div>
+                                  <img src="data/img/photo/photo21.jpg" style="width:100%">
+                                  <div class="textP">San Francisco, California US</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">22 / 27</div>
+                                  <img src="data/img/photo/photo22.jpg" style="width:100%">
+                                  <div class="textP">El nido, palawan PH</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">23 / 27</div>
+                                  <img src="data/img/photo/photo23.jpg" style="width:100%">
+                                  <div class="textP">Coron, palawan PH</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">24 / 27</div>
+                                  <img src="data/img/photo/photo24.jpg" style="width:100%">
+                                  <div class="textP">Gili T, Bali ID</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">25 / 27</div>
+                                  <img src="data/img/photo/photo25.jpg" style="width:100%">
+                                  <div class="textP">Toulouse, Midi-pyrenees FR</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">26 / 27</div>
+                                  <img src="data/img/photo/photo26.jpg" style="width:100%">
+                                  <div class="textP">Wintegreen, Virginia US</div>
+                                </div>
+
+                                <div class="mySlidesP fade">
+                                  <div class="numbertextP">27 / 27</div>
+                                  <img src="data/img/photo/photo27.jpg" style="width:100%">
+                                  <div class="textP">Yosemite, California US</div>
+                                </div>
+
+                                <a class="prevP" onclick="plusSlidesP(-1)">&#x276E;</a>
+                                <a class="nextP" onclick="plusSlidesP(1)">&#x276F;</a>
+
+                            </div>
+                        </dd>
+
+                        <dt>
+                            <p class="title">Snowboard</p>
+                            <p>Snowboard is my passion and I do it every time I get a change.</p>
+                        </dt>
+                        <dd>
+                            <div class="slideshow-container">
+
+                                <div class="mySlidesS fade">
+                                  <div class="numbertextS">1 / 4</div>
+                                  <img src="data/img/snow/snow01.jpg" style="width:100%">
+                                  <div class="textS">Aspen Snowmass, Colorado US</div>
+                                </div>
+
+                                <div class="mySlidesS fade">
+                                  <div class="numbertextS">2 / 4</div>
+                                  <img src="data/img/snow/snow02.jpg" style="width:100%">
+                                  <div class="textS">Aspen Bowl, Colorado US</div>
+                                </div>
+
+                                <div class="mySlidesS fade">
+                                  <div class="numbertextS">3 / 4</div>
+                                  <img src="data/img/snow/snow03.jpg" style="width:100%">
+                                  <div class="textS">Verbier, Valais Switzerland</div>
+                                </div>
+
+                                <div class="mySlidesS fade">
+                                  <div class="numbertextS">3 / 4</div>
+                                  <img src="data/img/snow/snow04.jpg" style="width:100%">
+                                  <div class="textS">Verbier, Valais Switzerland</div>
+                                </div>
+
+                                <a class="prevS" onclick="plusSlidesS(-1)">&#x276E;</a>
+                                <a class="nextS" onclick="plusSlidesS(1)">&#x276F;</a>
+
+                            </div>
+
+                        </dd>
+
+                        <dt>
+                            <p class="title">Others</p>                        
+                        </dt>
+                        <dd>
+                            <p class="title">Web and App Developent</p>
+                            <p>I like to spend time developing websites using HTML, CSS and Javascript (this is an example). I also do some iPhone applications in Swift.</p>
+                            <p class="title">BMX</p>
+                            <p>I like braking bones.</p>
+                            <p class="title">Traveling</p>
+                            <p>I like to go to wired places.</p>
+                        </dd>
+
+                </dl>
+            </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/slidesF.js"></script>
+    <script type="text/javascript" src="js/slidesS.js"></script>
+    <script type="text/javascript" src="js/slidesP.js"></script>
+
+</body>
