@@ -7,12 +7,10 @@
 .history {
     dt {
         width: 40%;
-        //background-color: #999;
         text-align: center;
     }
     dd {
         width: 59%;
-        //background-color: #269;
     }
 }
 
@@ -27,9 +25,13 @@
     .history dt, dd {
         display: block;
     }
-    .history dd {
-        display: block;
+    .history dt {
         width: 100%;
+        text-align: center;
+    }
+    .history dd {
+        width: 100%;
+        text-align: left;
     }
     .profilePicture {
         width: 100%;
@@ -51,20 +53,26 @@
 
 .skills dt {
     width: 50%;
-    //background-color: #999;
     text-align: right;
     padding-right: 10px;
 }
 
 .skills dd {
     width: 49%;
-    //background-color: #269;
     padding-left: 10px;
 }
 
 @media(max-width: 640px) {
     .skills dt, dd {
+        width: 100%;
         display: block;
+        text-align: center;
+        padding-right: 0px;
+    }
+    .skills dd {
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 5px;
     }
 }
 
@@ -78,12 +86,24 @@
     dt {
         width: 40%;
         text-align: left;
-        //text-align: left;
-        //text-align: center;
     }
     dd {
         width: 59%;
-        //background-color: #269;
+    }
+}
+
+@media(max-width: 640px) {
+    .hobbies dt, dd {
+        width: 100%;
+        display: block;
+        padding-right: 0px;
+    }
+    .hobbies dt {
+        text-align: center;
+    }
+    .hobbies dd {
+        width: 100%;
+        text-align: left;
     }
 }
 
@@ -158,6 +178,12 @@
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+@media only screen and (max-width: 640px) {
+  .textF, .textP, .textS, .nextF, .nextP, .nextS, .prevF, .prevP, .prevS {
+      font-size: 11px
+    }
+  .prevF, .prevP, .prevS {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+  }  
 }

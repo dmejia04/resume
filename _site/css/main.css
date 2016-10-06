@@ -130,10 +130,10 @@ a.active {
 
 .link {
   transition: color .4s;
-  color: #265C83;
+  color: #1122CC;
   text-decoration: none; }
   .link:visited {
-    color: #265C83; }
+    color: #6611CC; }
   .link:hover {
     color: #007BE6; }
   .link:active {
@@ -165,9 +165,13 @@ a.active {
   .history dt, dd {
     display: block; }
 
+  .history dt {
+    width: 100%;
+    text-align: center; }
+
   .history dd {
-    display: block;
-    width: 100%; }
+    width: 100%;
+    text-align: left; }
 
   .profilePicture {
     width: 100%; } }
@@ -192,7 +196,15 @@ a.active {
 
 @media (max-width: 640px) {
   .skills dt, dd {
-    display: block; } }
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-right: 0px; }
+
+  .skills dd {
+    width: 100%;
+    padding-left: 0px;
+    padding-top: 5px; } }
 .hobbies dt, dd {
   display: inline-block;
   vertical-align: top;
@@ -204,6 +216,18 @@ a.active {
 .hobbies dd {
   width: 59%; }
 
+@media (max-width: 640px) {
+  .hobbies dt, dd {
+    width: 100%;
+    display: block;
+    padding-right: 0px; }
+
+  .hobbies dt {
+    text-align: center; }
+
+  .hobbies dd {
+    width: 100%;
+    text-align: left; } }
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -267,9 +291,13 @@ a.active {
   to {
     opacity: 1; } }
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next, .text {
-    font-size: 11px; } }
+@media only screen and (max-width: 640px) {
+  .textF, .textP, .textS, .nextF, .nextP, .nextS, .prevF, .prevP, .prevS {
+    font-size: 11px; }
+
+  .prevF, .prevP, .prevS {
+    left: 0;
+    border-radius: 0 3px 3px 0; } }
 .experience dt, dd {
   display: inline-block;
   vertical-align: top;
@@ -280,20 +308,40 @@ a.active {
   vertical-align: top;
   margin-bottom: 20px; }
 
+.experience dt {
+  width: 40%;
+  text-align: center; }
+.experience dd {
+  width: 59%; }
+
+.education dt {
+  width: 40%;
+  text-align: center; }
+.education dd {
+  width: 59%; }
+
 .taskPostdoc, .listCourses {
   list-style-position: outside;
   margin-left: 2em; }
 
-@media (min-width: 640px) {
+@media (max-width: 640px) {
+  .experience dt, .experience dd {
+    display: block; }
   .experience dt {
-    width: 40%; }
+    width: 100%;
+    text-align: center; }
   .experience dd {
-    width: 60%; }
+    width: 100%;
+    text-align: left; }
 
+  .education dt, .education dd {
+    display: block; }
   .education dt {
-    width: 40%; }
+    width: 100%;
+    text-align: center; }
   .education dd {
-    width: 60%; } }
+    width: 100%;
+    text-align: left; } }
 .title {
   margin: 0;
   font-weight: bold;
@@ -406,7 +454,14 @@ form {
 
 @media (max-width: 640px) {
   .footerColWraper dt, dd {
-    display: block; } }
+    display: block;
+    width: 100%;
+    text-align: center; }
+
+  .footerColWraper dd {
+    width: 100%;
+    text-align: center;
+    padding-top: 15px; } }
 .svg-icon {
   width: 40px;
   height: 40px;

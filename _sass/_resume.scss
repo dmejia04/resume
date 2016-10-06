@@ -10,26 +10,57 @@
     margin-bottom: 20px;
 }
 
+.experience {
+    dt {
+        width: 40%;
+        text-align: center;
+    }
+    dd {
+        width: 59%;
+    }
+}
+
+.education {
+    dt {
+        width: 40%;
+        text-align: center;
+    }
+    dd {
+        width: 59%;
+    }
+}
+
+
 .taskPostdoc, .listCourses {
     list-style-position:outside;
     margin-left: 2em;
 }
 
-@media(min-width: 640px) {
+@media(max-width: 640px) {
     .experience {
+        dt, dd {
+            display: block;
+        }
         dt {
-            width: 40%;
+            width: 100%;
+            text-align: center;
         }
         dd {
-            width: 60%;
+            width: 100%;
+            text-align: left;
         }
     }
     .education {
+        dt, dd {
+            display: block;
+        }
         dt {
-            width: 40%;
+            width: 100%;
+            text-align: center;
         }
         dd {
-            width: 60%;
+            width: 100%;
+            text-align: left;
         }
     }
 }
