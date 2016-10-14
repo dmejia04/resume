@@ -28,6 +28,7 @@ body {
 .containerHeader {
   position: relative;
   text-align: center;
+  max-width: 960px;
   height: 150px;
   margin: auto; }
 
@@ -60,6 +61,13 @@ nav {
   top: 0;
   text-align: right; }
 
+nav ul {
+  overflow: hidden;
+  -webkit-transition: max-height 0.4s;
+  -ms-transition: max-height 0.4s;
+  -moz-transition: max-height 0.4s;
+  -o-transition: max-height 0.4s; }
+
 nav ul li {
   display: inline-block;
   text-decoration: none;
@@ -84,18 +92,26 @@ nav ul li a {
   color: black;
   font-size: 1.04rem; }
 
+.handle {
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: none; }
+
 @media (max-width: 640px) {
-  nav ul li a {
-    font-size: 0.80rem; }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: right; }
 
-  .navTitle a {
-    font-size: 1.00rem; } }
-@media (max-width: 550px) {
-  nav ul li a {
-    font-size: 0.70rem; }
+  .navBot {
+    display: block;
+    text-align: right;
+    cursor: pointer; }
 
-  .navTitle a {
-    font-size: 0.90rem; } }
+  .navBot:before {
+    content: "Menu"; } }
 a.active {
   color: #000; }
 

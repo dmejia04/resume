@@ -12,12 +12,15 @@ jQuery(document).ready(function() {
 
 		if (scrollPos >= navOffset) {
 			jQuery("nav").addClass("fixed");
-			jQuery(".navTitle").slideDown(200);
+			jQuery(".navTitle").fadeIn(200);
 		} else	{
 			jQuery("nav").removeClass("fixed");
-			jQuery(".navTitle").slideUp(200);
+			jQuery(".navTitle").fadeOut(200);
 		}
 	})
 
 })
 
+$('spam.navBot').click(function(){
+	$('ul.nav').toggle();
+})
