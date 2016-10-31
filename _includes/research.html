@@ -1,19 +1,143 @@
 <body>
 	<div class="content">
         <h3 class="section-title">INTECOCIS Project</h3>
-        	<p>The <a class="link" href="{{ site.links.intecocis }}">INTECOCIS</a> project was issued from an <a class="link" href="{{ site.links.erc }}">ERC</a> european advanced grand obtained by <a class="link" href="{{ site.links.poinsot }}">Dr. Thierry Poinsot</a> and his team in 2013. This project is dedicated to the study of combustion instabilities using massively parallel computing on the largest world systems. My role in this project was to build and test an experimental rig to serve as a validation tool for the advanced computational simulations. This experimental rig is called INTRIG and is a controlled buff-body type combustion chamber with well defined boundary conditions. The INTRIG burner has constant rectangular cross section and feature a V-shape laminar premixed flame anchor at the a flame holder.<!-- The main componenet of the combustion chamber is a cylindrical (94 mm long and 8 mm diameter) flame holder-->. The design of the combustion chamber allows the flame holder to have different characteristics and shapes <i>e.g.</i> it can be cooled or heated in order to study the effec of heat transfer on flame dynamics and flame stabilisation. It can also be rotated or vibrated in order to study different flame stabilisations mechanism.</p>
+
+        <dl class="intecocis">
+                <dt>
+                    <p>The <a class="link" href="{{ site.links.intecocis }}">INTECOCIS</a> project was issued from an <a class="link" href="{{ site.links.erc }}">ERC</a> european advanced grand obtained by <a class="link" href="{{ site.links.poinsot }}">Dr. Thierry Poinsot</a> and his team in 2013. This project is dedicated to the study of combustion instabilities using massively parallel computing on the largest world systems. My role in this project was to build and test an experimental rig to serve as a validation tool for the advanced computational simulations. This experimental rig is called INTRIG and is a controlled buff-body type combustion chamber with well defined boundary conditions. The INTRIG burner has constant rectangular cross section and feature a V-shape laminar premixed flame anchor at the a flame holder.<!-- The main componenet of the combustion chamber is a cylindrical (94 mm long and 8 mm diameter) flame holder-->. The design of the combustion chamber allows the flame holder to have different characteristics and shapes <i>e.g.</i> it can be cooled or heated in order to study the effec of heat transfer on flame dynamics and flame stabilisation. It can also be rotated or vibrated in order to study different flame stabilisations mechanism.</p>
+                </dt>
+                    <dd>
+                        <div class="slideshow-container-intecocis">
+
+                                <div class="mySlidesI fade">
+                                  <div class="numbertextI">1 / 2</div>
+                                  <img src="data/img/research/intrigBurnerRC.jpg" style="width:100%">
+                                  <!--<div class="textI">US Ramonville 2014/2015</div>-->
+                                </div>
+
+                                <div class="mySlidesI fade">
+                                  <div class="numbertextI">2 / 2</div>
+                                  <img src="data/img/research/intrigBurner.jpg" style="width:100%">
+                                  <!--<div class="textI">US Ramonville 2013/2014</div>-->
+                                </div>
+
+                                <a class="prevI" onclick="plusSlidesI(-1)">&#x276E;</a>
+                                <a class="nextI" onclick="plusSlidesI(1)">&#x276F;</a>
+
+                        </div>
+                    </dd>
+        </dl>        
+        	
             <h3 class="sub-section-title">1. Heat Transfer Effect on Flame Dynamics</h3>
-            <p></p>
+            <p>Experimentalists are aware that the wall temperatures of a combustion chamber affect the  thermoacoustic combustion instabilities which can develop in the combustor: a chamber does not exhibit the same noise and unstable modes when it starts (and walls are cold) or when it has run for a few minutes (and walls have reached a higher steady temperature). From the modeling point of view, however, most models assume adiabatic flames and do not include any interaction between walls and flames. This is clearly a weak aspect of most Large Eddy Simulation (LES) approaches for turbulent burners. Among all the walls found in a combustion chamber, flameholders play a very specific role: this is where flames are anchored and where they are the most sensitive to heat transfer. Any temperature change of the solid in the region where flames are stabilized can change not only its stabilization point (the place where it is anchored) but also its dynamics (its response to acoustic waves as well as its blow-off limits). </p>
+            <p>To study this effec of the flame holder tempearature on flame dynamics we developed a a system were the temperature of the flame holder can be controlled. Two different flame holders are used to stabilize the flame. The first, called CBB (Cooled Bluff-Body), is a steel water-cooled cylinder. It is maintained at 285 K. The second, called UBB (Uncooled Bluff-Body) is a full, solid, steel cylinder, with the same external geometry as the cooled one. </p>
+            <div class="slideshow-container-flameHolders">
+
+                                <div class="mySlidesFH fade">
+                                  <div class="numbertextFH">1 / 2</div>
+                                  <center><img chass="flameHolder" src="data/img/research/flameHolderC.jpg" style="max-height: 300px"></center>
+                                  <!--<div class="textI">US Ramonville 2014/2015</div>-->
+                                </div>
+
+                                <div class="mySlidesFH fade">
+                                  <div class="numbertextFH">2 / 2</div>
+                                  <center><img chass="flameHolder" src="data/img/research/flameHolderU.jpg" style="max-height: 300px"></center>
+                                  <!--<div class="textI">US Ramonville 2014/2015</div>-->
+                                </div>
+
+                                <a class="prevFH" onclick="plusSlidesFH(-1)">&#x276E;</a>
+                                <a class="nextFH" onclick="plusSlidesFH(1)">&#x276F;</a>
+
+            </div>
+            <p>From the images avobe it is eveident that the flame stabilisation is very different in the two cases CBB and UBB. The hoter the flame holder the closer de flame. This effec also affects the flame response to acoustic perturbation. The following video show the comparation between the experiments and the DNS similations for the two cases. Here, the both flames were excited with the same velocity perturbation, a single tone harmonic wave. The perturbation is produced by a laud-speaker installed at the bottom of the plenum chamber and it has a fraquency of 100 Hz and an amplidute of 5 % of the bulk velocity. </p>
+            <center>
+            <video class="paris_video" controls >
+                <source src="data/videos/heatTrasnfer.mp4" type="video/mp4">
+                <script>
+                    QT_WriteOBJECT('data/videos/heatTrasnfer.mp4',
+                        '', '',             // width & height
+                        '',                         // required version of the ActiveX control, we're OK with the default value
+                        'scale', 'tofit',           // scale to fit element size exactly so resizing works
+                        'emb#id', 'paris_embed',    // ID for embed tag only
+                        'obj#id', 'paris_obj');     // ID for object tag only
+                </script> 
+            </video>
+            </center>
+            <p>DNS Simulations are performed in dual mode: the flow is computed with ABVP solver using a 19 species kinetic scheme for CH4/air flames (Lu19) while the temperature in the solid is computed with a ABTP heat transfer solver, coupled to the flow solver.</p>
+            <p>Several conclusion arrise from these results: first, the DNS and the experiments are in good agrement, the flame anchoring position and the flame fluctiations are well reproduce for both cases CBB and UBB. Second, the flame dynamics is cleary affected by the cylinder temperature, the flame front fluctuations are more important in the case of the cooled cylinder (CBB).</p>
+
+
             <h3 class="sub-section-title">2. Flame Stabilizator Over Moving Flame Holders</h3>
-            <p></p>
+            <p>Moving flame holder are an interesting case that allow us to the study of the basic mechanims of flame stabilization. It can be done experimentally and mumerically. For example in the case of a rotating flame holder we can observe two different patterns of stabilization depending on the flame holder rotation speed.
+            At low rotation rate the flame stabilises downstream the flame holder, and one can observe strange behabir in the flame root stand-off for the two branches. The leading flame stays attached to the cylinder, the trailing flame however is pushed away from the cylinder. Our research showed that this phenomena is controlled by the heat ransfer form the burt gases to the cylinder. The heat transfer is more important whe the cylinder is rotatigig. However, when the rotation rate is increased the flame stabilses upstream the flame holder. This stabilization pattern has been reported before in anlalitically and numercal studies but it has never been seen experimentally until now.</p>   
+            <div class="slideshow-container-intecocis">
+
+                                <div class="mySlidesT fade">
+                                  <div class="numbertextT">1 / 2</div>
+                                   <center><img chass="flameHolder" src="data/img/research/flameHolderR.jpg" style="max-height: 300px"></center>
+                                  <!--<div class="textI">US Ramonville 2014/2015</div>-->
+                                </div>
+
+                                <div class="mySlidesT fade">
+                                  <div class="numbertextT">2 / 2</div>
+                                   <center><img chass="flameHolder" src="data/img/research/flameTopologies.jpg" style="max-height: 300px"></center>
+                                  <!--<div class="textI">US Ramonville 2013/2014</div>-->
+                                </div>
+
+                                <a class="prevT" onclick="plusSlidesT(-1)">&#x276E;</a>
+                                <a class="nextT" onclick="plusSlidesT(1)">&#x276F;</a>
+
+            </div>     
+            
 
         <h3 class="section-title">Slot Burner Project</h3>	
-        	<p>The slot burner project was financed by a "bource ministerielle" and it was issued from the basic idea that thermal machines do not perform in the same way during a cold start than in permanente regime. To approach this idea from a fundamental point of view an experimental rig was build. It consist in a bunsen type burner, which features a premixed-laminar flame stabilized over a 10:1 aspect ratio slot. The main characteristic of this burner is that the stability of the system can be controlled by only changes in the flame holder temperature. During the warmup, the system is unstable, it develops a combustion instability looked at its Helmholtz resonate frequency. This instability can reach acoustic noise levels up to 150 dB, depending on the operating conditions. At the permanent regime, when the flame holder has reached is equilibrium temperature, the system is stable. This study was the first controlled experiment that put in evidence the importance the heat transfer on the study of combustion instabilities. In order to capture the correct flame dynamics. Thus, to predict combustion instabilities with numerical simulations or analytical models. It is necessary take into account the heat transfer from the flame to the combustion chamber, specially to the flame holder.</p>
-        	<p>The following video shows the slot burner in operation, here, the temperature of the flame holder is controlled by varying the mass-flow rate of water that passes through the flame holder cooling system.</p>
-        	<div class="videoWrapper">
-        	   <iframe width="560" height="315" src="https://www.youtube.com/embed/c059fdirIF8" frameborder="0" allowfullscreen align="center">
-        	   </iframe>
-        	</div>
+
+        <dl class="intecocis">
+                <dt>
+                    <p>The slot burner project was financed by a "bource ministerielle" and it was issued from the basic idea that thermal machines do not perform in the same way during a cold start than in permanente regime. To approach this idea from a fundamental point of view an experimental rig was build. It consist in a bunsen type burner, which features a premixed-laminar flame stabilized over a 10:1 aspect ratio slot. The main characteristic of this burner is that the stability of the system can be controlled by only changes in the flame holder temperature. During the warmup, the system is unstable, it develops a combustion instability looked at its Helmholtz resonate frequency. This instability can reach acoustic noise levels up to 150 dB, depending on the operating conditions. At the permanent regime, when the flame holder has reached is equilibrium temperature, the system is stable.</p>
+                </dt>
+                    <dd>
+                        <p><img class="slotBurner" src="data/img/research/slotBurner1.jpg" alt="Slot Burner"></p>
+                    </dd>
+        </dl>  
+        	
+        	<p>This study was the first controlled experiment that put in evidence the importance the heat transfer on the study of combustion instabilities. In order to capture the correct flame dynamics. Thus, to predict combustion instabilities with numerical simulations or analytical models. It is necessary take into account the heat transfer from the flame to the combustion chamber, specially to the flame holder. The following video shows the slot burner in operation, here, the temperature of the flame holder is controlled by varying the mass-flow rate of water that passes through the flame holder cooling system.</p>
+        	<center>
+            <video class="paris_video" controls >
+                <source src="data/videos/slotBurner.mp4" type="video/mp4">
+                <script>
+                    QT_WriteOBJECT('data/videos/slotBurner.mp4',
+                        '', '',             // width & height
+                        '',                         // required version of the ActiveX control, we're OK with the default value
+                        'scale', 'tofit',           // scale to fit element size exactly so resizing works
+                        'emb#id', 'paris_embed',    // ID for embed tag only
+                        'obj#id', 'paris_obj');     // ID for object tag only
+                </script> 
+            </video>
+            </center>
+            <p>But at the IMFT not everinthing is so serious, we also have some time to avec fun with our flames: </p>
+            <center>
+            <video class="paris_video" controls >
+                <source src="data/videos/wakaWakaFlame.mp4" type="video/mp4">
+                <script>
+                    QT_WriteOBJECT('data/videos/wakaWakaFlame.mp4',
+                        '', '',             // width & height
+                        '',                         // required version of the ActiveX control, we're OK with the default value
+                        'scale', 'tofit',           // scale to fit element size exactly so resizing works
+                        'emb#id', 'paris_embed',    // ID for embed tag only
+                        'obj#id', 'paris_obj');     // ID for object tag only
+                </script> 
+            </video>
+            </center>
+            <p>This is an example of what acoustic waves can do to laminar premixed flames. If you exite them at the right frequency they can dance, almos as sexy as Shakira!</p>
                 		
     </div>
+
+    <script type="text/javascript" src="js/slidesI.js"></script>
+    <script type="text/javascript" src="js/slidesFH.js"></script>
+    <script type="text/javascript" src="js/slidesT.js"></script>
+    <script type="text/javascript" src="js/ac_quicktime.js"></script>
+
 </body>
+
+

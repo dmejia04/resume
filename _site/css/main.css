@@ -326,13 +326,13 @@ a.active {
 
 .experience dt {
   width: 40%;
-  text-align: center; }
+  text-align: left; }
 .experience dd {
   width: 59%; }
 
 .education dt {
   width: 40%;
-  text-align: center; }
+  text-align: left; }
 .education dd {
   width: 59%; }
 
@@ -362,6 +362,116 @@ a.active {
   margin: 0;
   font-weight: bold;
   font-size: 1.2rem; }
+
+.intecocis dt, dd {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px; }
+
+.intecocis dt {
+  width: 55%;
+  text-align: left; }
+.intecocis dd {
+  width: 44%; }
+
+.intrigBurner {
+  max-height: 314px;
+  max-width: 222px;
+  width: 100%;
+  border-radius: 8px; }
+
+@media (max-width: 640px) {
+  .intecocis dt, dd {
+    display: block; }
+
+  .intecocis dt {
+    width: 100%;
+    text-align: center; }
+
+  .intecocis dd {
+    width: 100%;
+    text-align: left; }
+
+  .intrigBurner {
+    width: 100%; } }
+/* Slideshow container */
+.slideshow-container-intecocis, .slideshow-container-flameHolders {
+  max-width: 1000px;
+  position: relative;
+  margin: auto; }
+
+/* Next & previous buttons */
+.prevI, .nextI, .prevFH, .nextFH, .prevT, .nextT {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  border-radius: 0 3px 3px 0; }
+  .prevI:hover, .nextI:hover, .prevFH:hover, .nextFH:hover, .prevT:hover, .nextT:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white; }
+
+/* Position the "next button" to the right */
+.nextI, .nextFH, .nexT, .nextT {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* Caption text */
+.textI, .textFH, .textT, .textT {
+  color: #0C090A;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center; }
+
+/* Number text (1/3 etc) */
+.numbertextI, .numbertextFH, .numbertextT, .numbertextT {
+  color: #0C090A;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 640px) {
+  .textI, .prevI, .nextI, .textFH, .prevFH, .nextT, .nextT, .textT, .prevT, .nextT {
+    font-size: 11px; }
+
+  .prevI, .prevFH, .prevT, .prevT {
+    left: 0;
+    border-radius: 0 3px 3px 0; } }
+video {
+  max-width: 560px; }
+
+.slotBurner {
+  max-height: 314px;
+  max-width: 720px;
+  width: 100%; }
 
 .listPublications, .listConferences {
   padding: 0 20px; }
