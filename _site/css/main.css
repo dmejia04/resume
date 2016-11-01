@@ -363,6 +363,9 @@ a.active {
   font-weight: bold;
   font-size: 1.2rem; }
 
+.introResearch {
+  padding-top: 30px; }
+
 .intecocis dt, dd {
   display: inline-block;
   vertical-align: top;
@@ -370,15 +373,15 @@ a.active {
 
 .intecocis dt {
   width: 55%;
-  text-align: left; }
+  text-align: left;
+  padding-right: 20px; }
 .intecocis dd {
   width: 44%; }
 
-.intrigBurner {
+.slotBurner {
   max-height: 314px;
-  max-width: 222px;
-  width: 100%;
-  border-radius: 8px; }
+  max-width: 400px;
+  width: 100%; }
 
 @media (max-width: 640px) {
   .intecocis dt, dd {
@@ -386,19 +389,26 @@ a.active {
 
   .intecocis dt {
     width: 100%;
-    text-align: center; }
+    text-align: left; }
 
   .intecocis dd {
     width: 100%;
-    text-align: left; }
+    text-align: center; }
 
-  .intrigBurner {
+  .slotBurner {
     width: 100%; } }
 /* Slideshow container */
-.slideshow-container-intecocis, .slideshow-container-flameHolders {
-  max-width: 1000px;
+.slideshow-container-intecocis {
+  max-width: 960px;
   position: relative;
   margin: auto; }
+
+.slideshow-container-flameHolders {
+  max-width: 960px;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 /* Next & previous buttons */
 .prevI, .nextI, .prevFH, .nextFH, .prevT, .nextT {
@@ -466,12 +476,11 @@ a.active {
     left: 0;
     border-radius: 0 3px 3px 0; } }
 video {
-  max-width: 560px; }
-
-.slotBurner {
-  max-height: 314px;
-  max-width: 720px;
-  width: 100%; }
+  max-width: 560px;
+  max-height: 560px;
+  width: 100%;
+  padding-top: 20px;
+  margin-bottom: 20px; }
 
 .listPublications, .listConferences {
   padding: 0 20px; }

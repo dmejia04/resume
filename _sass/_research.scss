@@ -1,3 +1,7 @@
+.introResearch {
+  padding-top: 30px;
+}
+
 .intecocis dt, dd {
     display: inline-block;
     vertical-align: top;
@@ -8,17 +12,17 @@
     dt {
         width: 55%;
         text-align: left;
+        padding-right: 20px;
     }
     dd {
         width: 44%;
     }
 }
 
-.intrigBurner {
-    max-height: 314px;
-    max-width: 222px;
-    width: 100%;
-    border-radius: 8px;
+.slotBurner {
+  max-height: 314px;
+  max-width: 400px;
+  width: 100%;
 }
 
 @media(max-width: 640px) {
@@ -27,23 +31,33 @@
     }
     .intecocis dt {
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
     .intecocis dd {
         width: 100%;
-        text-align: left;
+        text-align: center;
     }
-    .intrigBurner {
+
+    .slotBurner {
         width: 100%;
     }
+
 }
 
-
 /* Slideshow container */
-.slideshow-container-intecocis, .slideshow-container-flameHolders {
-  max-width: 1000px;
+.slideshow-container-intecocis {
+  max-width: 960px;
   position: relative;
   margin: auto;
+}
+
+.slideshow-container-flameHolders {
+  max-width: 960px;
+  //max-height: 200px;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Next & previous buttons */
@@ -113,7 +127,7 @@
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 640px) {
   .textI, .prevI, .nextI, .textFH, .prevFH, .nextT, .nextT, .textT, .prevT, .nextT {
-      font-size: 11px
+    font-size: 11px
     }
   .prevI, .prevFH, .prevT, .prevT {
     left: 0;
@@ -122,11 +136,11 @@
 }
 
 video {
-    max-width: 560px;
+  max-width: 560px;
+  max-height: 560px;
+  width: 100%;
+  padding-top: 20px;
+  margin-bottom: 20px;
 }
 
-.slotBurner {
-    max-height: 314px;
-    max-width: 720px;
-    width: 100%;
-}
+
