@@ -20,7 +20,3 @@ jQuery(document).ready(function() {
 	})
 
 })
-
-$('spam.navBot').click(function(){
-	$('ul.nav').toggle();
-})

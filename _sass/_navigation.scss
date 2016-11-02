@@ -17,14 +17,6 @@ nav {
 	text-align: right;
 }
 
-nav ul {
-	overflow: hidden;
-	-webkit-transition: max-height 0.4s;
-	-ms-transition: max-height 0.4s;
-	-moz-transition: max-height 0.4s;
-	-o-transition: max-height 0.4s;
-}
-
 nav ul li {
 	display: inline-block;
 	text-decoration: none;
@@ -57,28 +49,14 @@ nav ul li a {
 	font-size: 1.04rem;
 }
 
-.handle {
-	width: 100%;
-	text-align: right;
-	box-sizing: border-box;
-	cursor: pointer;
-	display: none;
-}
-
 @media(max-width: 640px){
 	nav ul li {
-		box-sizing: border-box;
-		width: 100%;
-		text-align: right;
-	}
-	.navBot {
 		display: block;
-		text-align: right;
-		cursor: pointer;
-
-	}	
-	.navBot:before {
-		content: "Menu";
+		width: 100%;
+		text-align: center;
+	}
+	.navTitle {
+		display: none;
 	}
 }
 

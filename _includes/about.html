@@ -13,22 +13,29 @@
 
             <h3 class="section-title">Skills</h3>
             <div class="containerSkills">
-                <dl class="skills">
-                    {% for qualification in site.data.skills %}
-                        <dt>
+            <table style="width:100%">
+                <tr>
+                  {% for qualification in site.data.skills %}
+                   <th>
                             <p class="title">{{ qualification.qualification }}</p>
-                        </dt>
-                        <dd>
-                            <ul>
-                            {% for ability in qualification.ability %}
-                                <li>
-                                {{ ability }}
-                                </li>
-                            {% endfor %}  
-                            </ul> 
-                        </dd>
-                    {% endfor %}
-                </dl>
+                   </th>
+                   {% endfor %}
+                </tr>
+                 
+                <tr>
+                   {% for qualification in site.data.skills %} 
+                    <td>
+                      <ul class="listSkills">
+                           {% for ability in qualification.ability %}
+                           <li>
+                              {{ ability}}
+                           </li>
+                           {% endfor %}  
+                      </ul> 
+                    </td>  
+                    {% endfor %}   
+                </tr>
+            </table>    
             </div>
 
             <h3 class="section-title">Hobbies</h3>

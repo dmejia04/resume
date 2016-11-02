@@ -39,41 +39,34 @@
 }
 
 .containerSkills {
-    margin: auto;
+    margin-left: 100px;
     width: 100%;
+    float: center;
+
+    table {
+    table-layout : fixed;
+    }
 }
 
-.skills ul {
-    list-style-type: none;
+.containerSkills th {
+    text-align: left;
+
 }
 
-.skills dt, dd {
-    display: inline-block;
+.listSkills {
+  list-style-position:inside;
 }
 
-.skills dt {
-    width: 50%;
-    text-align: right;
-    padding-right: 10px;
-}
-
-.skills dd {
-    width: 49%;
-    padding-left: 10px;
+@media(max-width: 740px) {
+    .containerSkills {
+        margin-left: 50px;
+  }
 }
 
 @media(max-width: 640px) {
-    .skills dt, dd {
-        width: 100%;
-        display: block;
-        text-align: center;
-        padding-right: 0px;
-    }
-    .skills dd {
-        width: 100%;
-        padding-left: 0px;
-        padding-top: 5px;
-    }
+    .containerSkills {
+        margin: auto;
+  }
 }
 
 .hobbies dt, dd {
