@@ -39,7 +39,7 @@
 }
 
 .containerSkills {
-    margin-left: 100px;
+    margin: auto;
     width: 100%;
     float: center;
 
@@ -49,24 +49,21 @@
 }
 
 .containerSkills th {
-    text-align: left;
+    text-align: center;
+    padding-bottom: 10px;
 
+    td {
+      text-align: center;
+    }
+}
+
+.containerSkills td {
+    text-align: center;
 }
 
 .listSkills {
   list-style-position:inside;
-}
-
-@media(max-width: 740px) {
-    .containerSkills {
-        margin-left: 50px;
-  }
-}
-
-@media(max-width: 640px) {
-    .containerSkills {
-        margin: auto;
-  }
+  list-style-type:none;
 }
 
 .hobbies dt, dd {

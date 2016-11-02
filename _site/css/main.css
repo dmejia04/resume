@@ -86,6 +86,14 @@ nav ul li a {
   font-size: 1.04rem; }
 
 @media (max-width: 640px) {
+  nav {
+    background-color: rgba(255, 255, 255, 0.98);
+    background-size: cover;
+    width: 100%;
+    z-index: 500;
+    border-bottom: 1px solid #edefee;
+    text-align: center; }
+
   nav ul li {
     display: block;
     width: 100%;
@@ -173,24 +181,25 @@ a.active {
   .profilePicture {
     width: 100%; } }
 .containerSkills {
-  margin-left: 100px;
+  margin: auto;
   width: 100%;
   float: center; }
   .containerSkills table {
     table-layout: fixed; }
 
 .containerSkills th {
-  text-align: left; }
+  text-align: center;
+  padding-bottom: 10px; }
+  .containerSkills th td {
+    text-align: center; }
+
+.containerSkills td {
+  text-align: center; }
 
 .listSkills {
-  list-style-position: inside; }
+  list-style-position: inside;
+  list-style-type: none; }
 
-@media (max-width: 740px) {
-  .containerSkills {
-    margin-left: 50px; } }
-@media (max-width: 640px) {
-  .containerSkills {
-    margin: auto; } }
 .hobbies dt, dd {
   display: inline-block;
   vertical-align: top;

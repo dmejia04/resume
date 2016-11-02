@@ -50,6 +50,17 @@ nav ul li a {
 }
 
 @media(max-width: 640px){
+	
+	nav {
+		background-color: rgba(255,255,255,0.98);
+		background-size: cover;
+		width: 100%;
+		z-index: 500;
+		border-bottom: 1px solid #edefee;
+		text-align: center;
+	}
+
+
 	nav ul li {
 		display: block;
 		width: 100%;
