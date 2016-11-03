@@ -1,7 +1,6 @@
 var slideIndexF = 1;
 showSlidesF(slideIndexF);
 
-
 function plusSlidesF(n) {
   showSlidesF(slideIndexF += n);
 }

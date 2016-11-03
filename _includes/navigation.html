@@ -1,8 +1,9 @@
 <div class="containerNav">
 	<nav>
-		<div class="navTitle">
-			<h3><a href="index.html">{{ site.name }}</a></h3>
-		</div>
+	<div>
+			<h3 class="navTitle"><a href="index.html">{{ site.name }}</a></h3>
+	</div>
+		<a id="navToggle">&#9776;</a>
 			<ul class="navList">
 			<li><a href="index.html" {% if page.url == "/" %}class="active"{% endif %}>About</a></li>
 			<li><a href="resume.html" {% if page.url == "/resume.html" %}class="active"{% endif %}>Resume</a></li>
@@ -11,4 +12,5 @@
 			<li><a href="contact.html" {% if page.url == "/contact.html" %}class="active"{% endif %}>Contact</a></li>
 			</ul>
 	</nav>
+	<script type="text/javascript" src="js/navbar.js"></script>
 </div>
