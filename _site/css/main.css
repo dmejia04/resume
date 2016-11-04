@@ -217,6 +217,9 @@ a.active {
 
   td {
     font-size: 0.9rem; } }
+.photos {
+  max-width: 100%; }
+
 .hobbies dt, dd {
   display: inline-block;
   vertical-align: top;
@@ -388,6 +391,10 @@ a.active {
 
   .slotBurner {
     width: 100%; } }
+.conclusionList {
+  list-style-position: outside;
+  margin-left: 2em; }
+
 /* Slideshow container */
 .slideshow-container-intecocis {
   max-width: 960px;
@@ -400,6 +407,14 @@ a.active {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px; }
+
+.intecocisImg {
+  max-width: 100%;
+  max-height: 380px; }
+
+.flameHolder {
+  max-width: 100%;
+  max-height: 350px; }
 
 /* Next & previous buttons */
 .prevI, .nextI, .prevFH, .nextFH, .prevT, .nextT {
@@ -444,9 +459,9 @@ a.active {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 0s;
   animation-name: fade;
-  animation-duration: 1.5s; }
+  animation-duration: 0s; }
 
 @-webkit-keyframes fade {
   from {
