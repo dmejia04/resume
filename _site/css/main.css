@@ -134,6 +134,11 @@ a.active {
   text-align: center;
   position: relative; }
 
+.title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.2rem; }
+
 .link {
   transition: color .4s;
   color: #1122CC;
@@ -189,8 +194,7 @@ a.active {
     table-layout: fixed; }
 
 .containerSkills th {
-  text-align: center;
-  padding-bottom: 10px; }
+  text-align: center; }
   .containerSkills th td {
     text-align: center; }
 
@@ -198,9 +202,21 @@ a.active {
   text-align: center; }
 
 .listSkills {
-  list-style-position: inside;
   list-style-type: none; }
 
+.titleSkils {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2rem; }
+
+@media (max-width: 400px) {
+  .titleSkils {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    font-weight: bold; }
+
+  td {
+    font-size: 0.9rem; } }
 .hobbies dt, dd {
   display: inline-block;
   vertical-align: top;
@@ -338,11 +354,6 @@ a.active {
   .education dd {
     width: 100%;
     text-align: left; } }
-.title {
-  margin: 0;
-  font-weight: bold;
-  font-size: 1.2rem; }
-
 .introResearch {
   padding-top: 30px; }
 

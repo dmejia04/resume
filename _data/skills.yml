@@ -1,9 +1,9 @@
 - qualification: Comunication
   ability:
-    - Spanish - Bilingual
-    - French - Bilingual
-    - English - Fluent
-    - Italian - Fluent
+    - 'Spanish: Bilingual'
+    - 'French: Bilingual'
+    - 'English: Fluent'
+    - 'Italian: Fluent'
 
 - qualification: Language
   ability:

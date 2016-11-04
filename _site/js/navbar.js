@@ -38,11 +38,16 @@ $(window).resize(function(){
 		$('.navList').show();
 	}
 
+	if ($(window).width() < 640 ){
+		$('.navList').hide();
+	}
+
 });
 
 $('#navToggle').click(function() {
 	
 	var navHeight = $("nav").outerHeight();
+	
 	$('ul.navList').toggle();
 	$(".navPlaceholder").height($("nav").outerHeight());
 });
